@@ -54,11 +54,11 @@ function renderTasks(tasksArray) {
         // Right Elements
         const newDeleteBttn = document.createElement('img');
         newDeleteBttn.id = 'deleteBttn';
-        newDeleteBttn.src = "/JSFinalProject/Project2ToDoApp/images/Delete.svg"
+        newDeleteBttn.src = "images/Delete.svg"
 
         const newEditBttn = document.createElement('img')
         newEditBttn.id = 'editBttn';
-        newEditBttn.src = "/JSFinalProject/Project2ToDoApp/images/Edit.svg"
+        newEditBttn.src = "images/Edit.svg"
 
         // Append right elements
         newToDoItem.appendChild(newToDoItemRight);
@@ -150,10 +150,10 @@ themePicker.addEventListener("click", () => {
     bodyElement.classList.toggle("dark-theme")
 
     if (bodyElement.classList.contains("dark-theme")) {
-        themePicker.src = "/JSFinalProject/Project2ToDoApp/images/moon.svg"
+        themePicker.src = "images/moon.svg"
         localStorage.setItem("theme", "dark-theme")
     } else {
-        themePicker.src = "/JSFinalProject/Project2ToDoApp/images/sun.svg"
+        themePicker.src = "images/sun.svg"
         localStorage.setItem("theme", "light-theme");
     }
 })
@@ -164,10 +164,10 @@ let savedTheme = localStorage.getItem("theme")
 
 if (savedTheme === "dark-theme") {
     bodyElement.classList.add("dark-theme");
-    themePicker.src = "/JSFinalProject/Project2ToDoApp/images/moon.svg"
+    themePicker.src = "images/moon.svg"
     
 } else {
-    themePicker.src = "/JSFinalProject/Project2ToDoApp/images/sun.svg"
+    themePicker.src = "images/sun.svg"
     bodyElement.classList.remove("dark-theme");
     
 }

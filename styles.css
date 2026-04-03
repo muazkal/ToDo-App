@@ -16,6 +16,10 @@
     color: white;
 }
 
+.dark-theme .title {
+    color: white;
+}
+
 .title {
     color: #030a33;
 }
@@ -157,6 +161,7 @@ hr {
     padding: 15px;
     font-size: 16px;
 }
+
 
 .toDoItems {
     display: flex;
