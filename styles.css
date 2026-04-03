@@ -44,11 +44,6 @@
     border-color: #b7bbd459;
 }
 
-.profile-pic {
-    border-radius: 50%;
-    width: 36px;
-    height: 36px;
-}
 
 .header-content {
     display: flex;
