@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+
+    <title>Project 2: C4H ToDos (todo app)</title>
+</head>
+<body class="dark-theme">
+
+    <main>
+        <header>
+            <div class="header-content">
+                <div class="left-header">
+                    <img id='header-logo' src="\JSFinalProject\Project2ToDoApp\images\SimpleTodos Logo.svg">
+                </div>
+
+                <div class="right-header">
+                    <img id ="themePicker" src="\JSFinalProject\Project2ToDoApp\images\moon.svg">
+                    <img class="profile-pic" src="\JSFinalProject\Project2ToDoApp\images\profilePicture.png">
+                </div>
+            </div>
+            <hr>
+        </header>
+
+        <div class="toDoContent">
+
+            <form id="addListItemSection">
+                <input type="text" name="newToDoInputTxt" id="newToDoInputTxt" placeholder="New Todo...">
+                <button id="newToDoInputBttn">Add</button>
+            </form>
+
+            <div id="viewToDosSection">
+
+                <div class="viewToDosSectionHeader">
+                    <p class="title">My ToDos</p>
+
+                    <div class="viewToDosSearch">
+                        <input type="checkbox" id="showCompletedCheck" name="showCompletedCheck" value="showCompleted">
+                        <label class="title" for="showCompletedCheck">Show Completed</label>
+
+                        <input type="text" name="toDoItemSearch" id="toDoItemSearch" placeholder="Search...">
+                    </div>
+                </div>
+
+                <div class="toDoItems">
+
+                </div>
+
+                
+
+            </div>
+
+        </div>
+    </main>
+    
+    <script src="main.js"></script>
+</body>
+</html>

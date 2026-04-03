@@ -1,0 +1,220 @@
+:root {
+    --background-color: #030a33;
+    --text-color: white;
+    --placeholder-color: #dcdee9ec;
+    --background-variant: #2f3b7e59;
+}
+
+.dark-theme {
+    background-color: #030a33;
+    color: white;
+    transition: 0.3s;
+
+}
+
+.dark-theme .title {
+    color: white;
+}
+
+.title {
+    color: #030a33;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    transition: 0.3s;
+}
+
+
+#themePicker {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    background-color: #2f3b7e59;
+    padding: 7px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #b7bbd459;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.right-header {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #2f3b7e59;
+}
+
+
+
+.toDoContent {
+    padding-left: 400px;
+    padding-right: 400px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+
+#addListItemSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+}
+
+#newToDoInputTxt {
+    border: none;
+    border-radius: 15px;
+    background-color: #2f3b7e59;
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+    font-size: 16px;
+}
+
+#newToDoInputTxt::placeholder {
+    color: var(--placeholder-color);
+    font-size: 16px;
+}
+
+#newToDoInputBttn {
+    border:none;
+    background-color: #f5ab0d;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    height: 45px;
+    width: 14%;
+    text-align: center;
+    transition: 0.3s;
+}
+
+#newToDoInputBttn:hover {
+    cursor: pointer;
+    background-color: #cc8f0b;
+    transition: 0.3s;
+}
+
+
+.viewToDosSectionHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.viewToDosSectionHeader p {
+    font-size: 24px;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.viewToDosSearch {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.viewToDosSearch label {
+    font-size: 16px;
+    color: var(--placeholder-color);
+}
+
+#toDoItemSearch {
+    border: solid 2px #b7bbd459;
+    border-radius: 15px;
+    background-color: #2f3b7e59;
+    margin-left: 15px;
+    width: 50%;
+    height: 50px;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.toDoItems {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 30px;
+}
+
+#toDoItem {
+    border-radius: 15px;
+    background-color: #2f3b7e59;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#toDoItemLeft {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+    background: none;
+}
+
+#toDoItemRight {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    gap: 20px;
+    background: none;
+}
+
+#toDoItemRight img {
+    background: none;
+    width: 20px;
+    transition: 0.3s;
+}
+
+#toDoItemRight img:hover {
+    cursor: pointer;
+    transform: scale(1.5,1.5);
+}
+
+#listItemTitle {
+    background: none;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+.completed {
+    opacity: 60%;
+    transition: 0.3s;
+}
